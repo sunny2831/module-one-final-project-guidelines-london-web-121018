@@ -15,6 +15,7 @@ class QueensMigration < ActiveRecord::Migration[5.0]
     end
 
     create_table :tour_dates do |t|
+     t.integer :queen_id
      t.string :location_date
     end
 
